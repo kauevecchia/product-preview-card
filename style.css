@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --dark-blue: hsl(212, 21%, 14%);
+    --grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --ff-fraunces: 'Fraunces', sans-serif;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cream);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    width: 30rem;
+    height: 22.5rem;
+}
+
+.image img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+}
+
+main {
+    background-color: white;
+    width: 60rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1.2rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.content {
+    display: flex;
+    width: 30rem;
+    height: 22.5rem;
+    padding: 3.2rem 3.2rem;
+    gap: 2.4rem;
+    flex-direction: column;
+}
+
+.content span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: var(--ff-montserrat);
+    letter-spacing: 0.7rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.content span, p, small {
+    color: var(--grayish-blue);
+}
+
+.content h1 {
+    font-size: 3.2rem;
+    font-family: var(--ff-fraunces);
+    line-height: 3.2rem;
+    
+}
+
+.content p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 2.3rem;
+}
+
+.price {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.content h2 {
+    color: var(--dark-cyan);
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: var(--ff-fraunces);
+    
+}
+
+.price p {
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+button {
+    position: relative;
+    background-color: var(--dark-cyan);
+    padding: 1.6rem;
+    border-radius: .8rem;
+    border: none;
+    color: var(--white);
+    font-family: var(--ff-montserrat);
+    font-weight: 700;
+}
+
+button img {
+    position: absolute;
+    left: 22%;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 37.5rem) {
+    main {
+        flex-direction: column;
+        width: 35rem;
+        height: 50rem;
+    }
+
+    .image {
+        width: 35rem;
+        height: 20rem;
+    }
+
+    .image img {
+        
+    }
+}
+
